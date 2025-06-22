@@ -1,33 +1,14 @@
-# SA-MP Server Files
-*.amx
-*.log
-*.txt
-announce.exe
-samp-server.exe
-samp-npc.exe
-
-# Compiled Pawn Files
-gamemodes/*.amx
-filterscripts/*.amx
-
 # Server Logs and Runtime Files
 server_log.txt
+*.log
+*.txt
 server.cfg.bak
 crashinfo.txt
 pawn.cfg
 
-# Pawn Compiler Files
-pawncc.exe
-pawncc.pdb
-pawnc.dll
-pawnc.pdb
-pawndisasm.exe
-pawndisasm.pdb
-
-# Windows Executables
-*.exe
-*.dll
-*.pdb
+# Compiled Pawn Files (keep .pwn, ignore .amx)
+gamemodes/*.amx
+filterscripts/*.amx
 
 # Temporary Files
 *.tmp
@@ -49,4 +30,23 @@ desktop.ini
 !filterscripts/*.pwn
 !pawno/include/*.inc
 !server.cfg
-!README.md 
+!README.md
+!.gitignore
+
+# Keep Compiler and Server Executables
+!pawncc.exe
+!pawnc.dll
+!pawnc.pdb
+!pawndisasm.exe
+!pawndisasm.pdb
+!samp-server.exe
+!samp-npc.exe
+!announce.exe
+!pawno/pawncc.exe
+!pawno/pawnc.dll
+!pawno/libpawnc.dll
+!pawno/pawno.exe
+
+# Still ignore license and readme text files
+!samp-license.txt
+!server-readme.txt 
